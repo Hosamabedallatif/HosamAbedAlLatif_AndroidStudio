@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:maxLines="100"
+            android:layout_height="508dp"
+            android:text="Hi, text will be shown Here."
+            android:textStyle="italic"
+            android:textSize="100dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:onClick="LaunchSecondActivity"
+                android:text="Previous"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="LaunchHomeActivity"
+                android:textStyle="bold"
+                android:text="Home"></Button>
+
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
